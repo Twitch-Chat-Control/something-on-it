@@ -1,6 +1,6 @@
 import axios from "axios";
 import {XMLParser} from "fast-xml-parser";
-
+import fs from "fs";
 
 const options = {ignoreAttributes: false};
 const parser = new XMLParser(options);
@@ -8,48 +8,42 @@ const parser = new XMLParser(options);
 axios
     .get(process.env.PODCAST_RSS_URL)
     .then(value => {
-        parseRss(value.data)
+        const result = parseRss(value.data)
+        fs.writeFileSync("../src/app/constants/PodcastData.json", JSON.stringify(result, null, 4));
     });
 
 function parseRss(rss) {
-    let response = parser.parse(rss).rss;
-
-
-    let resp = response.channel.item.map(item => {
-        return {
-            title: item.title,
-            season: item["itunes:season"],
-            episode: item["itunes:episode"],
-            recording_sourse: item.enclosure["@_url"],
-            links: [
-                {
-                    type: "mave",
-                    value: item.link
-                }
-            ],
-            timings: getTimestamps(item["itunes:summary"])
-        }
-    })
-
-    console.log(resp);
+    return parser
+        .parse(rss)
+        .rss
+        .channel
+        .item
+        .map(item => {
+            return {
+                title: item.title,
+                season: item["itunes:season"],
+                episode: item["itunes:episode"],
+                recording_sourse: item.enclosure["@_url"],
+                links: [
+                    {
+                        type: "mave",
+                        value: item.link
+                    }
+                ],
+                timings: getTimestamps(item["itunes:summary"])
+            }
+        })
 }
 
 function getTimestamps(summary) {
     const regex = /([0-9]{1,2}:[0-9]{1,2}) - (.*)\n/gm;
-    let rez = []
+    let typestamps = []
 
     let m;
     while ((m = regex.exec(summary)) !== null) {
-        if (m.index === regex.lastIndex) {
-            regex.lastIndex++;
-        }
+        if (m.index === regex.lastIndex) regex.lastIndex++;
 
-        rez.push(
-            {
-                time: m[1],
-                description: m[2]
-            });
+        typestamps.push({time: m[1], description: m[2]});
     }
-
-    return rez;
+    return typestamps;
 }

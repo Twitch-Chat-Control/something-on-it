@@ -1,4 +1,4 @@
-name: Deploy WF
+name: Update and deploy
 on: workflow_dispatch
 
 permissions:
@@ -8,6 +8,8 @@ permissions:
 
 jobs:
   run-updater:
+    env:
+      PODCAST_RSS_URL: ${{ secrets.PODCAST_RSS_URL }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout project sources
@@ -19,7 +21,14 @@ jobs:
           cd updater
           npm ci
           npm run start
+      - name: Auto commit
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Automated Change (podcast-data) ⚙️
+          branch: main
+          file_pattern: 'PodcastData.json'
   deploy-site:
+    needs: run-updater
     environment:
       name: github-pages
       url: ${{ steps.build-publish.outputs.page_url }}
