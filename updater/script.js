@@ -5,13 +5,11 @@ import {XMLParser} from "fast-xml-parser";
 const options = {ignoreAttributes: false};
 const parser = new XMLParser(options);
 
-console.log(process.env);
-
-// axios
-//     .get(process.env.PODCAST_RSS_URL)
-//     .then(value => {
-//         parseRss(value.data)
-//     });
+axios
+    .get(process.env.PODCAST_RSS_URL)
+    .then(value => {
+        parseRss(value.data)
+    });
 
 function parseRss(rss) {
     let response = parser.parse(rss).rss;
@@ -42,15 +40,9 @@ function getTimestamps(summary) {
 
     let m;
     while ((m = regex.exec(summary)) !== null) {
-        if (m.index === regex.lastIndex) {
-            regex.lastIndex++;
-        }
+        if (m.index === regex.lastIndex) regex.lastIndex++;
 
-        rez.push(
-            {
-                time: m[1],
-                description: m[2]
-            });
+        rez.push({time: m[1], description: m[2]});
     }
 
     return rez;
