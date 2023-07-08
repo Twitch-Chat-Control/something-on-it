@@ -8,6 +8,8 @@ permissions:
 
 jobs:
   run-updater:
+    permissions:
+      contents: write
     env:
       PODCAST_RSS_URL: ${{ secrets.PODCAST_RSS_URL }}
     runs-on: ubuntu-latest
