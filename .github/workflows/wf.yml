@@ -15,11 +15,12 @@ jobs:
     steps:
       - name: Checkout project sources
         uses: actions/checkout@v3
-      - name: 'Build'
-        shell: bash
-        run: |
-          npm ci
-          npm run build:prod
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: 'npm'
+      - run: npm ci
+      - run: npm run build:prod
       - name: 'Upload'
         uses: actions/upload-pages-artifact@v1.0.4
         with:
