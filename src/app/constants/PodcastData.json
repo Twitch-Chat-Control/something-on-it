@@ -1,0 +1,544 @@
+[
+    {
+        "title": "Ретроспектива сезона | Что-то на ITшном #9",
+        "season": 1,
+        "episode": 9,
+        "recording_sourse": "https://api.mave.digital/storage/podcasts/def6263c-b5f4-4876-9706-f42c24aba314/episodes/d035795b-97ae-4715-bd08-6885d6ac2821.mp3",
+        "links": [
+            {
+                "type": "mave",
+                "value": "https://something-on-it.mave.digital/ep-9"
+            }
+        ],
+        "timings": [
+            {
+                "time": "00:00",
+                "description": "Вступление"
+            },
+            {
+                "time": "0:55",
+                "description": "С чего все началось"
+            },
+            {
+                "time": "2:50",
+                "description": "О выпусках"
+            },
+            {
+                "time": "11:40",
+                "description": "Опыт в медиа"
+            },
+            {
+                "time": "13:15",
+                "description": "Этапы создания выпуска"
+            },
+            {
+                "time": "25:20",
+                "description": "Название подкаста"
+            },
+            {
+                "time": "27:50",
+                "description": "Гости"
+            },
+            {
+                "time": "31:33",
+                "description": "Рубрики"
+            },
+            {
+                "time": "35:55",
+                "description": "Подготовка к следующему сезону"
+            },
+            {
+                "time": "42:15",
+                "description": "Анонс следующего сезона"
+            }
+        ]
+    },
+    {
+        "title": "Холивары интернета | Что-то на ITшном #8",
+        "season": 1,
+        "episode": 8,
+        "recording_sourse": "https://api.mave.digital/storage/podcasts/def6263c-b5f4-4876-9706-f42c24aba314/episodes/10206a37-d7ef-4797-a4bc-77ad7cb389c6.mp3",
+        "links": [
+            {
+                "type": "mave",
+                "value": "https://something-on-it.mave.digital/ep-8"
+            }
+        ],
+        "timings": [
+            {
+                "time": "00:00",
+                "description": "Вступление"
+            },
+            {
+                "time": "0:55",
+                "description": "Windows vs Mac OS vs Linux"
+            },
+            {
+                "time": "13:15",
+                "description": "Android vs IOS"
+            },
+            {
+                "time": "21:15",
+                "description": "Светлая тема vs Темная тема"
+            },
+            {
+                "time": "26:25",
+                "description": "ПК сервисы vs Web"
+            },
+            {
+                "time": "37:30",
+                "description": "Математические холивары"
+            },
+            {
+                "time": "42:15",
+                "description": "Мнение слушателей"
+            },
+            {
+                "time": "44:20",
+                "description": "Олег в IT"
+            }
+        ]
+    },
+    {
+        "title": "Инструменты для программистов | Что-то на ITшном #7",
+        "season": 1,
+        "episode": 7,
+        "recording_sourse": "https://api.mave.digital/storage/podcasts/def6263c-b5f4-4876-9706-f42c24aba314/episodes/6130c9d3-ef1a-4109-867b-9faaa587a1cb.mp3",
+        "links": [
+            {
+                "type": "mave",
+                "value": "https://something-on-it.mave.digital/ep-7"
+            }
+        ],
+        "timings": [
+            {
+                "time": "00:00",
+                "description": "Вступление"
+            },
+            {
+                "time": "0:50",
+                "description": "notion"
+            },
+            {
+                "time": "14:15",
+                "description": "Developer Roadmaps"
+            },
+            {
+                "time": "16:50",
+                "description": "мета-вопросы"
+            },
+            {
+                "time": "18:30",
+                "description": "блоксхемы"
+            },
+            {
+                "time": "21:30",
+                "description": "grep.app"
+            },
+            {
+                "time": "22:28",
+                "description": "Spring Initializer"
+            },
+            {
+                "time": "24:55",
+                "description": "React и Redux DevTools"
+            },
+            {
+                "time": "28:20",
+                "description": "Wappalyzer"
+            },
+            {
+                "time": "29:30",
+                "description": "Picture-in-Picture"
+            },
+            {
+                "time": "31:35",
+                "description": "1password"
+            },
+            {
+                "time": "32:50",
+                "description": "nightTab"
+            },
+            {
+                "time": "34:00",
+                "description": "yt-dlp"
+            },
+            {
+                "time": "35:55",
+                "description": "ncdu"
+            },
+            {
+                "time": "37:55",
+                "description": "ctop и jq"
+            },
+            {
+                "time": "42:40",
+                "description": "Новости"
+            },
+            {
+                "time": "50:02",
+                "description": "Олег в IT"
+            }
+        ]
+    },
+    {
+        "title": "Интернет квесты и программисты | Что-то на ITшном #6",
+        "season": 1,
+        "episode": 6,
+        "recording_sourse": "https://api.mave.digital/storage/podcasts/def6263c-b5f4-4876-9706-f42c24aba314/episodes/af27f103-c83d-4844-96c4-e302e0998b36.mp3",
+        "links": [
+            {
+                "type": "mave",
+                "value": "https://something-on-it.mave.digital/ep-6"
+            }
+        ],
+        "timings": [
+            {
+                "time": "00:00",
+                "description": "Вступление"
+            },
+            {
+                "time": "0:25",
+                "description": "с чего начались интернет квесты"
+            },
+            {
+                "time": "6:30",
+                "description": "цикада 3301"
+            },
+            {
+                "time": "8:40",
+                "description": "ARG"
+            },
+            {
+                "time": "12:25",
+                "description": "ARG в Portal"
+            },
+            {
+                "time": "17:45",
+                "description": "Advent of Code"
+            },
+            {
+                "time": "22:15",
+                "description": "Project Euler"
+            },
+            {
+                "time": "23:00",
+                "description": "CodeWars и LeetCode"
+            },
+            {
+                "time": "25:00",
+                "description": "Python challenge, Chekio, CodinGame"
+            },
+            {
+                "time": "27:00",
+                "description": "есть ли смысл начинать изучать программирование с квестов"
+            },
+            {
+                "time": "30:30",
+                "description": "1-апрельские новости"
+            },
+            {
+                "time": "41:00",
+                "description": "Олег в IT"
+            }
+        ]
+    },
+    {
+        "title": "Концептуальные фильмы | Что-то на ITшном #5",
+        "season": 1,
+        "episode": 5,
+        "recording_sourse": "https://api.mave.digital/storage/podcasts/def6263c-b5f4-4876-9706-f42c24aba314/episodes/ffd1ce40-26bd-4b03-bbcc-c533081739e4.mp3",
+        "links": [
+            {
+                "type": "mave",
+                "value": "https://something-on-it.mave.digital/ep-5"
+            }
+        ],
+        "timings": [
+            {
+                "time": "00:00",
+                "description": "Вступление"
+            },
+            {
+                "time": "0:35",
+                "description": "как мы познакомились с кино"
+            },
+            {
+                "time": "5:00",
+                "description": "как мы относимся к фильмам"
+            },
+            {
+                "time": "9:30",
+                "description": "концептуальные фильмы"
+            },
+            {
+                "time": "11:10",
+                "description": "Начало"
+            },
+            {
+                "time": "18:06",
+                "description": "Шоу Трумана"
+            },
+            {
+                "time": "24:35",
+                "description": "Престиж"
+            },
+            {
+                "time": "32:45",
+                "description": "Загадочная история Бенджамина Баттона"
+            },
+            {
+                "time": "33:25",
+                "description": "Связь"
+            },
+            {
+                "time": "40:00",
+                "description": "Детонатор"
+            },
+            {
+                "time": "43:05",
+                "description": "Человек с Земли"
+            },
+            {
+                "time": "46:10",
+                "description": "Аннигиляция"
+            },
+            {
+                "time": "48:30",
+                "description": "Платформа"
+            }
+        ]
+    },
+    {
+        "title": "Яндекс, Финтех или Аутсорс? Что выбрать? | Что-то на ITшном #4",
+        "season": 1,
+        "episode": 4,
+        "recording_sourse": "https://api.mave.digital/storage/podcasts/def6263c-b5f4-4876-9706-f42c24aba314/episodes/b5d50990-3c6d-4478-ad77-73bfed05bf50.mp3",
+        "links": [
+            {
+                "type": "mave",
+                "value": "https://something-on-it.mave.digital/ep-4"
+            }
+        ],
+        "timings": [
+            {
+                "time": "00:00",
+                "description": "Вступление"
+            },
+            {
+                "time": "0:50",
+                "description": "история Олега из Яндекса"
+            },
+            {
+                "time": "2:55",
+                "description": "история Ярослава из финтеха"
+            },
+            {
+                "time": "5:25",
+                "description": "история Влада из аутсорса"
+            },
+            {
+                "time": "7:55",
+                "description": "нюансы аутсорс компании"
+            },
+            {
+                "time": "9:05",
+                "description": "нюансы работы в финтехе"
+            },
+            {
+                "time": "16:50",
+                "description": "собеседования в аутсорс компании"
+            },
+            {
+                "time": "19:55",
+                "description": "собственные сервисы в финтехе"
+            },
+            {
+                "time": "21:38",
+                "description": "нюансы работы в яндексе"
+            },
+            {
+                "time": "25:50",
+                "description": "стартапы и сервисы внутри компаний"
+            },
+            {
+                "time": "36:30",
+                "description": "команды и процессы"
+            }
+        ]
+    },
+    {
+        "title": "Стандартизация и ограничения - хорошо это или плохо? | Что-то на ITшном #3",
+        "season": 1,
+        "episode": 3,
+        "recording_sourse": "https://api.mave.digital/storage/podcasts/def6263c-b5f4-4876-9706-f42c24aba314/episodes/cbc46d71-6d91-408d-b9ad-6cf07d6df2f1.mp3",
+        "links": [
+            {
+                "type": "mave",
+                "value": "https://something-on-it.mave.digital/ep-3"
+            }
+        ],
+        "timings": [
+            {
+                "time": "00:00",
+                "description": "Вырезки из выпуска"
+            },
+            {
+                "time": "0:25",
+                "description": "Вступление"
+            },
+            {
+                "time": "0:59",
+                "description": "Обсуждение статьи об ограничениях в IT"
+            },
+            {
+                "time": "19:30",
+                "description": "JSON и YAML"
+            },
+            {
+                "time": "24:20",
+                "description": "Мнение слушателей"
+            },
+            {
+                "time": "25:10",
+                "description": "Word как убийца человека-часов"
+            },
+            {
+                "time": "35:10",
+                "description": "Python - как нельзя преподавать"
+            },
+            {
+                "time": "38:28",
+                "description": "Гравитационные батареи"
+            }
+        ]
+    },
+    {
+        "title": "Виртуальная и Дополненная реальность | Что-то на ITшном #2",
+        "season": 1,
+        "episode": 2,
+        "recording_sourse": "https://api.mave.digital/storage/podcasts/def6263c-b5f4-4876-9706-f42c24aba314/episodes/9b8f12db-7262-4716-8283-7c0bf6d24714.mp3",
+        "links": [
+            {
+                "type": "mave",
+                "value": "https://something-on-it.mave.digital/ep-2"
+            }
+        ],
+        "timings": [
+            {
+                "time": "00:00",
+                "description": "Вступление"
+            },
+            {
+                "time": "0:30",
+                "description": "История появления виртуальной реальности"
+            },
+            {
+                "time": "2:35",
+                "description": "Разница между виртуальной, дополненной и смешанной реальностями"
+            },
+            {
+                "time": "4:45",
+                "description": "Знакомство Олега с дополненной реальностью"
+            },
+            {
+                "time": "7:40",
+                "description": "Игры в VR"
+            },
+            {
+                "time": "14:30",
+                "description": "Игры в AR"
+            },
+            {
+                "time": "21:20",
+                "description": "Half-Life: Alyx"
+            },
+            {
+                "time": "22:35",
+                "description": "Дизайн в VR и AR"
+            },
+            {
+                "time": "24:35",
+                "description": "Медицина, инженеры и книги в VR и AR"
+            },
+            {
+                "time": "27:25",
+                "description": "Web AR"
+            },
+            {
+                "time": "29:40",
+                "description": "Голограмма"
+            },
+            {
+                "time": "31:30",
+                "description": "Критика"
+            },
+            {
+                "time": "38:15",
+                "description": "Мнение слушателей"
+            },
+            {
+                "time": "40:05",
+                "description": "Notion AI"
+            },
+            {
+                "time": "45:25",
+                "description": "Цикада 3301"
+            }
+        ]
+    },
+    {
+        "title": "Minecraft, как первая ступень в программировании | Что-то на ITшном #1",
+        "season": 1,
+        "episode": 1,
+        "recording_sourse": "https://api.mave.digital/storage/podcasts/def6263c-b5f4-4876-9706-f42c24aba314/episodes/3d4aff5a-b1d1-4f70-99b4-0514c62308e8.mp3",
+        "links": [
+            {
+                "type": "mave",
+                "value": "https://something-on-it.mave.digital/ep-1"
+            }
+        ],
+        "timings": [
+            {
+                "time": "00:00",
+                "description": "Вступление"
+            },
+            {
+                "time": "0:30",
+                "description": "С чего началось наше знакомство с программированием"
+            },
+            {
+                "time": "8:50",
+                "description": "Minecraft Education"
+            },
+            {
+                "time": "13:00",
+                "description": "Командные блоки"
+            },
+            {
+                "time": "19:10",
+                "description": "Плагины и моды на Java"
+            },
+            {
+                "time": "22:00",
+                "description": "Куда дальше"
+            },
+            {
+                "time": "24:50",
+                "description": "Комментарии от слушателей"
+            },
+            {
+                "time": "25:15",
+                "description": "Утечка Яндекса"
+            },
+            {
+                "time": "32:45",
+                "description": "Как спрятать радиоактивные отходы"
+            },
+            {
+                "time": "39:25",
+                "description": "Олег в IT"
+            }
+        ]
+    }
+]
