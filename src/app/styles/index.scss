@@ -3,10 +3,27 @@
 @import "themes/dark";
 
 .app {
+    margin: 0 auto;
     font: var(--font-m);
-    background-color: var(--bg-color);
-    color: var(--primary-color);
+    // background-color: var(--bg-color);
+    background-color: white;
+    // color: var(--primary-color);
+    color: black;
     min-height: 100vh;
+    max-width: 1280px;
+}
+
+.crutch {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+@media screen and (max-width: 1270px) {
+    .crutch {
+        display: flex;
+    }
 }
 
 .content-page {
