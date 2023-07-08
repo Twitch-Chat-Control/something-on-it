@@ -19,8 +19,8 @@ jobs:
         shell: bash
         run: |
           npm ci
-          npm run build
-      - name: 'upload'
+          npm run build:prod
+      - name: 'Upload'
         uses: actions/upload-pages-artifact@v1.0.4
         with:
           path: build
