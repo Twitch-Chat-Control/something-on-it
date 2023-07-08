@@ -7,6 +7,18 @@ permissions:
   id-token: write
 
 jobs:
+  run-updater:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout project sources
+        uses: actions/checkout@v2
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+      - name: Run readme update script
+        run: |
+          cd updater
+          npm ci
+          npm run start
   deploy-site:
     environment:
       name: github-pages
@@ -15,12 +27,14 @@ jobs:
     steps:
       - name: Checkout project sources
         uses: actions/checkout@v3
+
       - uses: actions/setup-node@v3
         with:
           node-version: 16
           cache: 'npm'
       - run: npm ci
       - run: npm run build:prod
+
       - name: 'Upload'
         uses: actions/upload-pages-artifact@v1.0.4
         with:
