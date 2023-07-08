@@ -1,9 +1,12 @@
 {
-  "name": "advance-frontend",
+  "homepage": "http://Twitch-Chat-Control.github.io/something-on-it",
+  "name": "something-on-it",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "webpack serve --env port=3000",
     "build": "webpack",
     "build:prod": "webpack --env mode=production",
