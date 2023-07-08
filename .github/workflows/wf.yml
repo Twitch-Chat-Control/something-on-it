@@ -28,7 +28,6 @@ jobs:
         with:
           commit_message: Automated Change (podcast-data) ⚙️
           branch: main
-          file_pattern: 'PodcastData.json'
   deploy-site:
     needs: run-updater
     environment:
