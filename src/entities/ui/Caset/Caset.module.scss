@@ -1,0 +1,57 @@
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.caset {
+    position: relative;
+}
+
+.casetLabel {
+    position: absolute;
+    top: 25px;
+    left: 32px;
+}
+
+.casetTitle {
+    margin: 0;
+    position: absolute;
+    top: 15px;
+    left: 70px;
+    font-size: 14px;
+}
+
+.casetDescription {
+    margin: 0;
+    position: absolute;
+    top: 35px;
+    left: 70px;
+    font-size: 14px;
+    max-width: 216px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.casetPart {
+    position: absolute;
+}
+
+.leftPart {
+    top: 72px;
+    left: 72px;
+}
+
+.rightPart {
+    top: 72px;
+    right: 72px;
+}
+
+.rotation {
+    animation: rotation 5s infinite linear;
+}
