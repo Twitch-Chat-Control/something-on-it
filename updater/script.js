@@ -5,11 +5,13 @@ import {XMLParser} from "fast-xml-parser";
 const options = {ignoreAttributes: false};
 const parser = new XMLParser(options);
 
-axios
-    .get(process.env.PODCAST_RSS_URL)
-    .then(value => {
-        parseRss(value.data)
-    });
+console.log(process.env);
+
+// axios
+//     .get(process.env.PODCAST_RSS_URL)
+//     .then(value => {
+//         parseRss(value.data)
+//     });
 
 function parseRss(rss) {
     let response = parser.parse(rss).rss;
