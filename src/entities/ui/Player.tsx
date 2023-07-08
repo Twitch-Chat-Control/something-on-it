@@ -1,6 +1,7 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useMemo, useRef, useState } from 'react'
 import style from './Player.module.scss'
 import { classNames } from 'shared/lib/classNames/classNames'
+// import Thumb from '../../shared/assets/images/thumb.svg'
 import BG from '../../shared/assets/images/player/BG.svg';
 import CASET_BG from '../../shared/assets/images/player/CASET_BG.svg';
 import CASET from '../../shared/assets/images/player/CASET.svg';
@@ -8,6 +9,7 @@ import UP from '../../shared/assets/images/player/UP.svg';
 import Screen from '../../shared/assets/images/player/Screen.svg';
 import PodcastData from '../../app/constants/PodcastData.json';
 import { IEpisode } from 'app/types/PodcastDataType';
+import { AiFillCaretRight, AiOutlinePause } from 'react-icons/ai'
 
 const Player = () => {
     /**The index of the track that's being played */
@@ -26,7 +28,13 @@ const Player = () => {
     const intervalRef = useRef()
 
     // Destructure for conciseness
-    const { duration } = audioRef.current;
+    const duration = useMemo(() => {
+        return audioRef.current.duration
+    }, [trackProgress]);
+
+    const currentTime = useMemo(() => {
+        return audioRef.current.currentTime
+    }, [trackProgress]);
 
     const toPrevTrack = () => {
         if (trackIndex - 1 < 0) {
@@ -72,9 +80,10 @@ const Player = () => {
         startTimer();
     }
 
-    const currentPercentage = duration ? `${(trackProgress / duration) * 100}%` : '0%';
-    // eslint-disable-next-line max-len
-    const trackStyling = `-webkit-gradient(linear, 0% 0%, 100% 0%, color-stop(${currentPercentage}, #fff), color-stop(${currentPercentage}, #777))`;
+    function toDateTime(seconds: number) {
+        const result = new Date(seconds * 1000).toISOString().slice(11, 19);
+        return result
+    }
 
     useEffect(() => {
         if (isPlaying) {
@@ -104,10 +113,6 @@ const Player = () => {
     }, [trackIndex]);
 
     useEffect(() => {
-        console.log(trackProgress);
-    }, [trackProgress])
-
-    useEffect(() => {
         // Pause and clean up on unmount
         return () => {
             audioRef.current.pause();
@@ -122,20 +127,48 @@ const Player = () => {
             <CASET className={classNames(style.caset, {}, [])} />
             <UP className={classNames(style.up, {}, [])} />
             <Screen className={classNames(style.screen, {}, [])} />
-            <button onClick={() => setIsPlaying(true)}>Play</button>
-            <button onClick={() => setIsPlaying(false)}>Pause</button>
-            <input
-                type="range"
-                value={trackProgress}
-                step="1"
-                min="0"
-                max={duration ? duration : `${duration}`}
-                className="progress"
-                onChange={(e) => onScrub(+e.target.value)}
-                onMouseUp={onScrubEnd}
-                onKeyUp={onScrubEnd}
-                style={{ background: trackStyling }}
-            />
+            <ul className={classNames(style.trackContainer, {}, [])}>
+                <li className={classNames(style.trackTitle, {}, [])}>
+                    {`ЭПИЗОД ${episode}. СЕЗОН ${season}`}
+                </li>
+                <li className={classNames(style.trackTitle, {}, [])}>
+                    {title.split(' | ')[0]}
+                </li>
+                <li className={classNames(style.slider, {}, [])}>
+                    <p className={classNames(style.time, {}, [])}>
+                        {currentTime ? toDateTime(currentTime) : '00:00'}
+                    </p>
+                    <input
+                        type="range"
+                        value={trackProgress}
+                        step="1"
+                        min={0}
+                        max={duration ? duration : 10}
+                        className={style.range}
+                        onChange={(e) => onScrub(+e.target.value)}
+                        onMouseUp={onScrubEnd}
+                        onKeyUp={onScrubEnd}
+                    />
+                    <p className={classNames(style.timeEnd, {}, [])}>
+                        {duration ? toDateTime(duration) : '∞'}
+                    </p>
+                </li>
+                {isPlaying
+                    ? <AiOutlinePause
+                        onClick={() => setIsPlaying(false)}
+                        className={classNames(style.playButton, {}, [])}
+                        color={'white'}
+                        size={30}
+                    />
+                    : <AiFillCaretRight
+                        onClick={() => setIsPlaying(true)}
+                        className={classNames(style.playButton, {}, [])}
+                        color={'white'}
+                        size={30}
+                    />
+                }
+
+            </ul>
         </div>
     )
 }

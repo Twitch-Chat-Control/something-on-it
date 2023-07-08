@@ -25,3 +25,112 @@
     top: 35px;
     left: 30px;
 }
+
+.trackContainer {
+    position: absolute;
+    top: 45px;
+    left: 55px;
+
+    max-width: 300px;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.trackTitle {
+    color: white;
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+}
+
+.slider {
+    margin-top: 50px;
+    position: relative;
+}
+
+.time {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: -15px;
+    left: -10px;
+
+    color: white;
+    font-size: 16px;
+}
+
+.timeEnd {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: -15px;
+    right: -10px;
+
+    color: white;
+    font-size: 16px;
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    width: 290px;
+    /* Скрывает слайдер, чтобы можно было создать свой */
+    /* Указание параметра ширины требуется для Firefox. */
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+}
+
+input[type=range]:focus {
+    outline: none;
+    /* Убирает голубую границу у элемента. Хотя, возможно, и стоит создавать некоторое оформления для состояния фокуса в целях обеспечения доступности. */
+}
+
+input[type=range]::-ms-track {
+    cursor: pointer;
+    background: transparent;
+    /* Скрывает слайдер, чтобы можно было добавить собственные стили. */
+    border-color: transparent;
+    color: transparent;
+}
+
+/* Специальные правила для браузеров на движках WebKit/Blink */
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    margin-top: -5px;
+    // border: 1px solid #000000;
+    border-radius: 158px;
+    background: white;
+    cursor: pointer;
+    // background-image: url();
+
+    // margin-top: -14px;
+    /* Вам нужно указать значение для поля в Chrome, но в Firefox и IE это происходит автоматически */
+    // box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    /* Добавляем классные эффекты для слайдера! */
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    -webkit-appearance: none;
+    height: 3px;
+    cursor: pointer;
+    //   box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    background: white;
+    border-radius: 60px;
+    //   border: 0.2px solid #010101;
+}
+
+.playButton {
+    margin-top: 10px;
+    align-self: center;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
