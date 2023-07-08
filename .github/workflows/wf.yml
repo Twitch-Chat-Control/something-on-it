@@ -8,6 +8,8 @@ permissions:
 
 jobs:
   run-updater:
+    permissions:
+      contents: write
     env:
       PODCAST_RSS_URL: ${{ secrets.PODCAST_RSS_URL }}
     runs-on: ubuntu-latest
@@ -26,7 +28,7 @@ jobs:
         with:
           commit_message: Automated Change (podcast-data) ⚙️
           branch: main
-          file_pattern: 'PodcastData.json'
+          file_pattern: 'src/app/constants/PodcastData.json'
   deploy-site:
     needs: run-updater
     environment:
