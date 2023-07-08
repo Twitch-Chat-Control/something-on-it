@@ -8,6 +8,8 @@ permissions:
 
 jobs:
   run-updater:
+    env:
+      PODCAST_RSS_URL: ${{ secrets.PODCAST_RSS_URL }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout project sources
