@@ -1,5 +1,18 @@
 [
     {
+        "title": "Как менялись подходы к учебе от школьных лет до взрослой жизни, и как современные технологии могут улучшить этот процесс.",
+        "season": 2,
+        "episode": 1,
+        "recording_sourse": "https://api.mave.digital/storage/podcasts/def6263c-b5f4-4876-9706-f42c24aba314/episodes/a1663dd3-e120-4c3c-9df8-6b90a63efffc.mp3",
+        "links": [
+            {
+                "type": "mave",
+                "value": "https://something-on-it.mave.digital/ep-10"
+            }
+        ],
+        "timings": []
+    },
+    {
         "title": "Ретроспектива сезона | Что-то на ITшном #9",
         "season": 1,
         "episode": 9,
